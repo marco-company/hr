@@ -27,9 +27,9 @@ class HrContract(models.Model):
         for attachment in attachments:
             result[attachment.res_id] |= attachment
 
-        for employee in self:
-            employee.document_ids = result[employee.id]
-            employee.documents_count = len(employee.document_ids)
+        for contract in self:
+            contract.document_ids = result[contract.id]
+            contract.documents_count = len(contract.document_ids)
 
     def action_get_attachment_tree_view(self):
         action = self.env["ir.actions.act_window"]._for_xml_id("base.action_attachment")
@@ -37,9 +37,7 @@ class HrContract(models.Model):
             "default_res_model": self._name,
             "default_res_id": self.ids[0],
         }
-        action["domain"] = str(
-            [("res_model", "=", self._name), ("res_id", "in", self.ids)]
-        )
+        action["domain"] = [("res_model", "=", self._name), ("res_id", "in", self.ids)]
         action["search_view_id"] = (
             self.env.ref("hr_contract_document.ir_attachment_view_search").id,
         )

@@ -8,13 +8,22 @@ from odoo.tests import common
 
 
 class TestHrContractDocument(common.TransactionCase):
-    def setUp(self):
-        super().setUp()
-
-        self.today = fields.Date.today()
-        self.HrEmployee = self.env["hr.employee"]
-        self.HrContract = self.env["hr.contract"]
-        self.IrAttachment = self.env["ir.attachment"]
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.env = cls.env(
+            context=dict(
+                cls.env.context,
+                mail_create_nolog=True,
+                mail_create_nosubscribe=True,
+                mail_notrack=True,
+                tracking_disable=True,
+            )
+        )
+        cls.today = fields.Date.today()
+        cls.HrEmployee = cls.env["hr.employee"]
+        cls.HrContract = cls.env["hr.contract"]
+        cls.IrAttachment = cls.env["ir.attachment"]
 
     def test(self):
         employee = self.HrEmployee.create({"name": "Employee"})
