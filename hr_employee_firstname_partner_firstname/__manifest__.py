@@ -12,5 +12,5 @@
     "summary": "Glue module between partner_firstname and hr_employee_firstname",
     "depends": ["hr_employee_firstname", "partner_firstname"],
     "installable": True,
-    "autoinstall": True,
+    "auto_install": True,
 }
