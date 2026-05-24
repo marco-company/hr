@@ -1,4 +1,7 @@
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# hr
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/hr/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/hr/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/hr/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/hr/actions/workflows/test.yml?query=branch%3A16.0)
@@ -6,8 +9,6 @@
 [![Translation Status](https://translation.odoo-community.org/widgets/hr-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# hr
 
 TODO: add repo description.
 
@@ -21,6 +22,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[hr_appraisal_oca](hr_appraisal_oca/) | 16.0.1.0.0 | <a href='https://github.com/ebauza'><img src='https://github.com/ebauza.png' width='32' height='32' style='border-radius:50%;' alt='ebauza'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Module for managing employee appraisals
+[hr_contract_document](hr_contract_document/) | 16.0.1.0.0 |  | Documents attached to the contact
 [hr_contract_employee_calendar_planning](hr_contract_employee_calendar_planning/) | 16.0.1.0.2 |  | Hr Contract Employee Calendar Planning
 [hr_contract_multi_job](hr_contract_multi_job/) | 16.0.1.0.0 |  | HR Contract Multi Jobs
 [hr_contract_reference](hr_contract_reference/) | 16.0.1.0.1 |  | HR Contract Reference
@@ -35,7 +38,7 @@ addon | version | maintainers | summary
 [hr_employee_document](hr_employee_document/) | 16.0.1.0.1 |  | Documents attached to the employee profile
 [hr_employee_document_from_applicant](hr_employee_document_from_applicant/) | 16.0.1.0.0 | <a href='https://github.com/ursais'><img src='https://github.com/ursais.png' width='32' height='32' style='border-radius:50%;' alt='ursais'/></a> | HR Employee Document from Applicant
 [hr_employee_firstname](hr_employee_firstname/) | 16.0.1.0.3 | <a href='https://github.com/Savoir-faire Linux'><img src='https://github.com/Savoir-faire Linux.png' width='32' height='32' style='border-radius:50%;' alt='Savoir-faire Linux'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds First Name to Employee
-[hr_employee_firstname_partner_firstname](hr_employee_firstname_partner_firstname/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Glue module between partner_firstname and hr_employee_firstname
+[hr_employee_firstname_partner_firstname](hr_employee_firstname_partner_firstname/) | 16.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Glue module between partner_firstname and hr_employee_firstname
 [hr_employee_group_overview_readonly](hr_employee_group_overview_readonly/) | 16.0.1.0.0 |  | HR Employee Group Overview Readonly
 [hr_employee_id](hr_employee_id/) | 16.0.1.0.1 |  | Employee ID
 [hr_employee_language](hr_employee_language/) | 16.0.1.0.1 |  | HR Employee Language
